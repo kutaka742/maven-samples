@@ -7,7 +7,7 @@ pipeline {
 
     //実行コンテナ」を設定
     agent{
-        label 'maven:3.6.3-jdk-8'
+        docker 'maven:3.6.3-jdk-8'
     }
 
     stages{
