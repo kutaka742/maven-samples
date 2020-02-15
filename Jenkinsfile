@@ -6,9 +6,7 @@ def TARGET_BRANCH = 'develop'
 pipeline {
 
     //実行コンテナ」を設定
-    agent{
-        docker 'maven:3.6.3-jdk-8'
-    }
+    agent any
 
     stages{
 
